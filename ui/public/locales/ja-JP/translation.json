@@ -348,8 +348,9 @@
     "shortcutIncreaseBrushSize": "ブラシサイズを大きくする",
     "shortcutDecreaseBrushSize": "ブラシサイズを小さくする",
     "shortcutPressKey": "キーを押してください...",
-    "shortcutReset": "ショートカットをリセット",
-    "shortcutConflict": "このキーの組み合わせはすでに使用されています",
+    "shortcutReset": "ショートカットのリセット",
+    "shortcutResetDescription": "すべてのショートカットをデフォルト値に戻します。保存された変更は失われます。",
+    "shortcutConflict": "そのキーの組み合わせは既に使用されています",
     "shortcutInvalid": "このキーはショートカットとして使用できません"
   },
   "updater": {

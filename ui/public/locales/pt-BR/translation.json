@@ -348,7 +348,8 @@
     "shortcutIncreaseBrushSize": "Aumentar o tamanho do pincel",
     "shortcutDecreaseBrushSize": "Diminuir o tamanho do pincel",
     "shortcutPressKey": "Pressione uma tecla...",
-    "shortcutReset": "Redefinir atalhos",
+    "shortcutReset": "Redefinir Atalhos",
+    "shortcutResetDescription": "Isso restaurará todos os atalhos para seus valores padrão. Suas alterações salvas serão perdidas.",
     "shortcutConflict": "Combinação de teclas já em uso",
     "shortcutInvalid": "Esta tecla não pode ser usada como atalho"
   },

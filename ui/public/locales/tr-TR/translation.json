@@ -349,6 +349,7 @@
     "shortcutDecreaseBrushSize": "Fırça Boyutunu Azalt",
     "shortcutPressKey": "Bir tuşa basın...",
     "shortcutReset": "Kısayolları Sıfırla",
+    "shortcutResetDescription": "Bu, tüm klavye kısayollarını varsayılan değerlerine döndürecektir. Kaydedilen değişiklikleriniz kaybolacaktır.",
     "shortcutConflict": "Tuş kombinasyonu zaten kullanılıyor",
     "shortcutInvalid": "Bu tuş kısayol olarak kullanılamaz"
   },

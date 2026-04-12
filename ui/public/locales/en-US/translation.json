@@ -350,6 +350,7 @@
     "shortcutDecreaseBrushSize": "Decrease Brush Size",
     "shortcutPressKey": "Press a key...",
     "shortcutReset": "Reset Keybinds",
+    "shortcutResetDescription": "This will restore all shortcuts to their default values. Your saved changes will be lost.",
     "shortcutConflict": "Key combination already in use",
     "shortcutInvalid": "This key cannot be used as a shortcut"
   },

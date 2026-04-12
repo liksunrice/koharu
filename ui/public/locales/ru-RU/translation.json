@@ -348,8 +348,9 @@
     "shortcutIncreaseBrushSize": "Увеличить размер кисти",
     "shortcutDecreaseBrushSize": "Уменьшить размер кисти",
     "shortcutPressKey": "Нажмите клавишу...",
-    "shortcutReset": "Сбросить горячие клавиши",
-    "shortcutConflict": "Это сочетание клавиш уже используется",
+    "shortcutReset": "Сбросить сочетания",
+    "shortcutResetDescription": "Это восстановит все сочетания клавиш до их значений по умолчанию. Сохраненные изменения будут потеряны.",
+    "shortcutConflict": "Сочетание клавиш уже используется",
     "shortcutInvalid": "Эту клавишу нельзя использовать как горячую"
   },
   "updater": {

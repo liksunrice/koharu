@@ -349,6 +349,7 @@
     "shortcutDecreaseBrushSize": "Disminuir tamaño del pincel",
     "shortcutPressKey": "Presiona una tecla...",
     "shortcutReset": "Restablecer atajos",
+    "shortcutResetDescription": "Esto restaurará todos los atajos a sus valores predeterminados. Los cambios guardados se perderán.",
     "shortcutConflict": "Combinación de teclas en uso",
     "shortcutInvalid": "Esta tecla no se puede usar como atajo"
   },

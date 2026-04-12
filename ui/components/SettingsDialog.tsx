@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useMemo, useState, type ReactNode } from 'react'
+import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { useQueryClient } from '@tanstack/react-query'
 import { useTheme } from 'next-themes'
 import { useTranslation } from 'react-i18next'
@@ -142,7 +142,7 @@ export function SettingsDialog({
         setAppConfig(config)
         setProviderCatalogs(catalog.providers)
         setEngineCatalog(engines)
-      } catch {}
+      } catch { }
     })()
   }, [open])
 
@@ -263,13 +263,13 @@ export function SettingsDialog({
   const storageSettingsUnchanged =
     dataPathDraft.trim() === appConfig?.data?.path &&
     httpConnectTimeoutDraft.trim() ===
-      String(
-        appConfig?.http?.connect_timeout ?? DEFAULT_HTTP_CONNECT_TIMEOUT,
-      ) &&
+    String(
+      appConfig?.http?.connect_timeout ?? DEFAULT_HTTP_CONNECT_TIMEOUT,
+    ) &&
     httpReadTimeoutDraft.trim() ===
-      String(appConfig?.http?.read_timeout ?? DEFAULT_HTTP_READ_TIMEOUT) &&
+    String(appConfig?.http?.read_timeout ?? DEFAULT_HTTP_READ_TIMEOUT) &&
     httpMaxRetriesDraft.trim() ===
-      String(appConfig?.http?.max_retries ?? DEFAULT_HTTP_MAX_RETRIES)
+    String(appConfig?.http?.max_retries ?? DEFAULT_HTTP_MAX_RETRIES)
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -784,17 +784,38 @@ function KeybindsPane() {
     }
   }, [recordingKey, pendingShortcuts, t, isMac])
 
+  const [resetConfirmOpen, setResetConfirmOpen] = useState(false)
+
+  const saveTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  useEffect(() => {
+    return () => {
+      if (saveTimeoutRef.current) {
+        clearTimeout(saveTimeoutRef.current)
+      }
+    }
+  }, [])
+
   const handleSave = () => {
     setShortcuts(pendingShortcuts)
     setIsSaved(true)
-    setTimeout(() => setIsSaved(false), 2000)
+
+    if (saveTimeoutRef.current) {
+      clearTimeout(saveTimeoutRef.current)
+    }
+
+    saveTimeoutRef.current = setTimeout(() => {
+      setIsSaved(false)
+      saveTimeoutRef.current = null
+    }, 2000)
   }
 
   const handleReset = () => {
-    if (confirm(t('settings.shortcutReset') + '?')) {
-      resetShortcutsStore()
-      // setPendingShortcuts will happen in useEffect
-    }
+    setResetConfirmOpen(true)
+  }
+
+  const handleConfirmReset = () => {
+    resetShortcutsStore()
+    setResetConfirmOpen(false)
   }
 
   return (
@@ -874,6 +895,20 @@ function KeybindsPane() {
           </Button>
         </div>
       </div>
+      <AlertDialog open={resetConfirmOpen} onOpenChange={setResetConfirmOpen}>
+        <AlertDialogContent>
+          <AlertDialogTitle>{t('settings.shortcutReset')}</AlertDialogTitle>
+          <AlertDialogDescription>
+            {t('settings.shortcutResetDescription')}
+          </AlertDialogDescription>
+          <div className='flex justify-end gap-2'>
+            <AlertDialogCancel>{t('common.cancel')}</AlertDialogCancel>
+            <AlertDialogAction onClick={handleConfirmReset}>
+              {t('common.confirm')}
+            </AlertDialogAction>
+          </div>
+        </AlertDialogContent>
+      </AlertDialog>
     </div>
   )
 }

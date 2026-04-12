@@ -349,6 +349,7 @@
     "shortcutDecreaseBrushSize": "减小笔刷大小",
     "shortcutPressKey": "请按下一个按键...",
     "shortcutReset": "重置快捷键",
+    "shortcutResetDescription": "这将恢复所有快捷键到默认值。您保存的更改将丢失。",
     "shortcutConflict": "此按键组合已在使用中",
     "shortcutInvalid": "此按键不能用作快捷键"
   },

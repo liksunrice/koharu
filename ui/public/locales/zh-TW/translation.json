@@ -347,7 +347,7 @@
     "keybindsDescription": "自定義工具和操作的快捷鍵。",
     "shortcutIncreaseBrushSize": "增大筆刷大小",
     "shortcutDecreaseBrushSize": "減小筆刷大小",
-    "shortcutPressKey": "請按下一个按鍵...",
+    "shortcutPressKey": "請按下一個按鍵...",
     "shortcutReset": "重置快捷鍵",
     "shortcutConflict": "此按鍵組合已在使用中",
     "shortcutInvalid": "此按鍵不能用作快捷鍵"

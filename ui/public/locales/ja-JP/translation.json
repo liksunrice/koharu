@@ -1,6 +1,7 @@
 {
   "common": {
     "initializing": "初期化中...",
+    "cancel": "キャンセル",
     "save": "保存",
     "saved": "保存しました！"
   },
@@ -59,7 +60,11 @@
     "pages_one": "{{count}} ページ",
     "pages_other": "{{count}} ページ",
     "empty": "ドキュメントがありません",
-    "prompt": "ページを選択または読み込んで開始してください"
+    "prompt": "ページを選択または読み込んで開始してください",
+    "pageManager": {
+      "title": "ページ管理",
+      "description": "ドラッグ＆ドロップでページの順番を変更します。"
+    }
   },
   "panels": {
     "processing": "処理",

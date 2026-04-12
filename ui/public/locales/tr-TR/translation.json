@@ -1,6 +1,7 @@
 {
   "common": {
     "initializing": "Başlatılıyor...",
+    "cancel": "İptal",
     "save": "Kaydet",
     "saved": "Kaydedildi!"
   },
@@ -59,7 +60,11 @@
     "pages_one": "{{count}} sayfa",
     "pages_other": "{{count}} sayfa",
     "empty": "Belge yok",
-    "prompt": "Başlamak için bir sayfa seçin veya içe aktarın"
+    "prompt": "Başlamak için bir sayfa seçin veya içe aktarın",
+    "pageManager": {
+      "title": "Sayfa Yöneticisi",
+      "description": "Sayfaları yeniden sıralamak için sürükleyip bırakın."
+    }
   },
   "panels": {
     "processing": "İşleme",

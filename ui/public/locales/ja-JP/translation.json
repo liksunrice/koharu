@@ -1,6 +1,8 @@
 {
   "common": {
-    "initializing": "初期化中..."
+    "initializing": "初期化中...",
+    "save": "保存",
+    "saved": "保存しました！"
   },
   "menu": {
     "file": "ファイル",
@@ -335,7 +337,15 @@
     "ocr": "OCR",
     "translator": "翻訳器",
     "inpainter": "インペインター",
-    "renderer": "レンダラー"
+    "renderer": "レンダラー",
+    "keybinds": "キーバインド",
+    "keybindsDescription": "ツールやアクションのショートカットキーをカスタマイズします。",
+    "shortcutIncreaseBrushSize": "ブラシサイズを大きくする",
+    "shortcutDecreaseBrushSize": "ブラシサイズを小さくする",
+    "shortcutPressKey": "キーを押してください...",
+    "shortcutReset": "ショートカットをリセット",
+    "shortcutConflict": "このキーの組み合わせはすでに使用されています",
+    "shortcutInvalid": "このキーはショートカットとして使用できません"
   },
   "updater": {
     "available": {

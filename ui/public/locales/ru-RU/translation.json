@@ -1,6 +1,8 @@
 {
   "common": {
-    "initializing": "Инициализация..."
+    "initializing": "Инициализация...",
+    "save": "Сохранить",
+    "saved": "Сохранено!"
   },
   "menu": {
     "file": "Файл",
@@ -335,7 +337,15 @@
     "ocr": "OCR",
     "translator": "Переводчик",
     "inpainter": "Инпейнтер",
-    "renderer": "Рендерер"
+    "renderer": "Рендерер",
+    "keybinds": "Горячие клавиши",
+    "keybindsDescription": "Настройте сочетания клавиш для инструментов и действий.",
+    "shortcutIncreaseBrushSize": "Увеличить размер кисти",
+    "shortcutDecreaseBrushSize": "Уменьшить размер кисти",
+    "shortcutPressKey": "Нажмите клавишу...",
+    "shortcutReset": "Сбросить горячие клавиши",
+    "shortcutConflict": "Это сочетание клавиш уже используется",
+    "shortcutInvalid": "Эту клавишу нельзя использовать как горячую"
   },
   "updater": {
     "available": {

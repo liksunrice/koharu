@@ -2,7 +2,9 @@
   "common": {
     "initializing": "Initializing...",
     "cancel": "Cancel",
-    "confirm": "Confirm"
+    "confirm": "Confirm",
+    "save": "Save",
+    "saved": "Saved!"
   },
   "menu": {
     "file": "File",
@@ -337,7 +339,15 @@
     "ocr": "OCR",
     "translator": "Translator",
     "inpainter": "Inpainter",
-    "renderer": "Renderer"
+    "renderer": "Renderer",
+    "keybinds": "Keybinds",
+    "keybindsDescription": "Customize keyboard shortcuts for tools and actions.",
+    "shortcutIncreaseBrushSize": "Increase Brush Size",
+    "shortcutDecreaseBrushSize": "Decrease Brush Size",
+    "shortcutPressKey": "Press a key...",
+    "shortcutReset": "Reset Keybinds",
+    "shortcutConflict": "Key combination already in use",
+    "shortcutInvalid": "This key cannot be used as a shortcut"
   },
   "updater": {
     "available": {

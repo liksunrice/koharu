@@ -23,6 +23,7 @@ type PreferencesState = {
     decreaseBrushSize: string
   }
   setShortcuts: (shortcuts: Partial<PreferencesState['shortcuts']>) => void
+  resetShortcuts: () => void
   resetPreferences: () => void
 }
 
@@ -32,11 +33,11 @@ const initialPreferences = {
     color: '#ffffff',
   },
   shortcuts: {
-    select: 'v',
-    block: 'm',
-    brush: 'b',
-    eraser: 'e',
-    repairBrush: 'r',
+    select: 'V',
+    block: 'M',
+    brush: 'B',
+    eraser: 'E',
+    repairBrush: 'R',
     increaseBrushSize: ']',
     decreaseBrushSize: '[',
   },
@@ -60,6 +61,12 @@ export const usePreferencesStore = create<PreferencesState>()(
           shortcuts: {
             ...state.shortcuts,
             ...shortcuts,
+          },
+        })),
+      resetShortcuts: () =>
+        set((state) => ({
+          shortcuts: {
+            ...initialPreferences.shortcuts,
           },
         })),
       resetPreferences: () => set({ ...initialPreferences }),

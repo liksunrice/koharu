@@ -1,6 +1,8 @@
 {
   "common": {
-    "initializing": "Inicializando..."
+    "initializing": "Inicializando...",
+    "save": "Salvar",
+    "saved": "Salvo!"
   },
   "menu": {
     "file": "Arquivo",
@@ -335,7 +337,15 @@
     "ocr": "OCR",
     "translator": "Tradutor",
     "inpainter": "Inpainter",
-    "renderer": "Renderizador"
+    "renderer": "Renderizador",
+    "keybinds": "Atalhos de teclado",
+    "keybindsDescription": "Personalize os atalhos de teclado para ferramentas e ações.",
+    "shortcutIncreaseBrushSize": "Aumentar o tamanho do pincel",
+    "shortcutDecreaseBrushSize": "Diminuir o tamanho do pincel",
+    "shortcutPressKey": "Pressione uma tecla...",
+    "shortcutReset": "Redefinir atalhos",
+    "shortcutConflict": "Combinação de teclas já em uso",
+    "shortcutInvalid": "Esta tecla não pode ser usada como atalho"
   },
   "updater": {
     "available": {
